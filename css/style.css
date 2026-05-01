@@ -1,12 +1,12 @@
 :root {
-    --bg: #fff6f8;
+    --bg: #ffe5ec;
     --surface: #ffffff;
-    --surface-soft: #fde5ec;
+    --surface-soft: #ffc2d1;
     --text: #2f2327;
     --muted: #735f66;
-    --accent: #b84f73;
-    --accent-dark: #873752;
-    --border: #f0cbd6;
+    --accent: #fb6f92;
+    --accent-dark: #d94d73;
+    --border: #ffb3c6;
     --font-heading: "Caprasimo", Georgia, serif;
     --font-body: "Montserrat", Arial, Helvetica, sans-serif;
 }
@@ -32,7 +32,7 @@ p {
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 229, 236, 0.95) !important;
     border-bottom: 1px solid var(--border);
 }
 
@@ -64,7 +64,7 @@ p {
 }
 
 .hero {
-    background: linear-gradient(180deg, #ffe9f0 0%, var(--bg) 100%);
+    background: linear-gradient(180deg, #ffc2d1 0%, var(--bg) 100%);
     padding: 6rem 0 4rem;
 }
 
@@ -191,7 +191,7 @@ p {
 
 .project-step {
     align-items: center;
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.75);
     border: 1px solid var(--border);
     border-radius: 8px;
     display: grid;
