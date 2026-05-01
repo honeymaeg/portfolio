@@ -152,18 +152,26 @@ p {
 
 .process-carousel {
     margin: 2rem auto 0;
-    max-width: 860px;
+    max-width: 980px;
     padding: 0 4rem;
 }
 
 .carousel-card {
-    max-width: 680px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(260px, 45%) 1fr;
+    max-width: 820px;
 }
 
 .carousel-card .card-img-top {
-    height: 420px;
+    height: 360px;
     object-fit: contain;
     padding: 1rem;
+    width: 100%;
+}
+
+.carousel-card .card-body {
+    padding: 2rem;
 }
 
 .process-carousel .carousel-control-prev,
@@ -233,6 +241,10 @@ footer {
 
     .process-carousel {
         padding: 0 3.25rem;
+    }
+
+    .carousel-card {
+        grid-template-columns: 1fr;
     }
 
     .carousel-card .card-img-top {
