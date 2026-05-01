@@ -7,12 +7,14 @@
     --accent: #b84f73;
     --accent-dark: #873752;
     --border: #f0cbd6;
+    --font-heading: "against", Georgia, serif;
+    --font-body: "Garet", Arial, Helvetica, sans-serif;
 }
 
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-body);
     line-height: 1.65;
 }
 
@@ -21,6 +23,7 @@ h2,
 h3,
 .navbar-brand {
     color: var(--text);
+    font-family: var(--font-heading);
     font-weight: 700;
 }
 
@@ -43,6 +46,7 @@ p {
 
 .nav-link {
     color: var(--muted);
+    font-family: var(--font-body);
     font-weight: 600;
 }
 
@@ -101,6 +105,7 @@ p {
     background: var(--accent);
     border-color: var(--accent);
     border-radius: 999px;
+    font-family: var(--font-body);
     font-weight: 700;
     padding: 0.65rem 1.2rem;
 }
