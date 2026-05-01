@@ -32,7 +32,7 @@ p {
 }
 
 .navbar {
-    background: rgba(255, 229, 236, 0.95) !important;
+    background: #ffffff !important;
     border-bottom: 1px solid var(--border);
 }
 
