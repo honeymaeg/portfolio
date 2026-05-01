@@ -146,6 +146,41 @@ p {
     padding: 1rem;
 }
 
+.process-intro {
+    max-width: 760px;
+}
+
+.process-carousel {
+    margin: 2rem auto 0;
+    max-width: 860px;
+    padding: 0 4rem;
+}
+
+.carousel-card {
+    max-width: 680px;
+}
+
+.carousel-card .card-img-top {
+    height: 420px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.process-carousel .carousel-control-prev,
+.process-carousel .carousel-control-next {
+    opacity: 1;
+    width: 3rem;
+}
+
+.process-carousel .carousel-control-prev-icon,
+.process-carousel .carousel-control-next-icon {
+    background-color: var(--accent);
+    background-size: 60%;
+    border-radius: 999px;
+    height: 3rem;
+    width: 3rem;
+}
+
 .project-step {
     align-items: center;
     background: rgba(255, 255, 255, 0.65);
@@ -194,6 +229,14 @@ footer {
     .project-step,
     .project-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .process-carousel {
+        padding: 0 3.25rem;
+    }
+
+    .carousel-card .card-img-top {
+        height: 280px;
     }
 
     .card-img-top {
