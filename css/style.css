@@ -1,3 +1,84 @@
 body {
-    background-color:pink
+    background: #fff5f8;
+    color: #2b2024;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand img {
+    object-fit: contain;
+}
+
+.hero {
+    padding: 6rem 0 4rem;
+}
+
+.hero .lead,
+.project-hero .lead {
+    max-width: 760px;
+}
+
+.card-img-top {
+    height: 320px;
+    object-fit: cover;
+}
+
+.about-logo {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+}
+
+.project-hero {
+    padding: 4rem 0 2rem;
+}
+
+.project-hero img {
+    margin-top: 1.5rem;
+    max-height: 620px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.poster-preview {
+    background: #ffffff;
+}
+
+.project-step {
+    align-items: center;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: minmax(220px, 420px) 1fr;
+    margin-bottom: 3rem;
+}
+
+.project-step img,
+.project-gallery img {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    max-width: 100%;
+}
+
+.project-gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer {
+    background: #f8dce6;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0 3rem;
+    }
+
+    .project-step,
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card-img-top {
+        height: 240px;
+    }
 }

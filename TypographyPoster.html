@@ -2,48 +2,37 @@
 <html lang="en">
 
 <head>
-    <!-- REQUIRED: Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- REQUIRED: Page Title -->
-    <title>Honey Mae Garo</title>
-
-    <!-- REQUIRED: Bootstrap CSS -->
+    <title>Typography Poster | Honey Mae Garo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- REQUIRED: Your Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
-    
-
-    <!-- REQUIRED: Google Font API -->
-    <link href="https://fonts.googleapis.com/css2?family=against:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'against', regular;
-        }
-    </style>
 </head>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <img src="img/Logo.png" alt="Logo" class="d-inline-block align-text-top img-fluid" style="max-width: 50px; height: auto;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="img/Logo.png" alt="Honey Mae Garo logo" width="50" height="50">
+                Honey Mae Garo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" href="index.html">Home</a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
                     <a class="nav-link" href="About.html">About</a>
                     <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Projects
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="WebsiteMockup.html">Project 1</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="TypographyPoster.html">Project 2</a></li>
+                            <li><a class="dropdown-item" href="WebsiteMockup.html">Website Mockup</a></li>
+                            <li><a class="dropdown-item active" href="TypographyPoster.html">Typography Poster</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,194 +40,44 @@
         </div>
     </nav>
 
-<section>
-    <header class="m-4">
-        <h1 class="display-1">Website Mockup</h1>
-        <p style="font-family: 'Garet';">Objective</p>
-        <p style="font-family: 'Garet';">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex
-            sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
-            aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa
-            nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad
-            litora torquent per conubia nostra inceptos himenaeos.</p>
-</section>
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <h1 class="display-2">Typography Poster</h1>
+                <p class="lead">
+                    A poster design exploring how type, spacing, scale, and layout can create a strong visual style.
+                </p>
+                <img src="img/Typeface%20Poster.png" class="img-fluid rounded poster-preview" alt="Typography poster">
+            </div>
+        </section>
 
-<section>
-    <header class="p-4">
-        <h2> The Process</h2>
-        <section>
+        <section class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h2>Objective</h2>
+                    <p>
+                        The goal of this project was to showcase a chosen font family and use typography as the main
+                        visual element. The poster focuses on hierarchy, contrast, and composition.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Result</h2>
+                    <p>
+                        The final design uses type as both information and image, giving the poster a clear focal point
+                        while keeping the layout readable.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <header class="mt-5">
-                <h3> Overview</h3>
-                <p style="font-family: 'Garet';">Behind The Pen is an online art platform that aims to present
-                    artwork from a variety of perspectives, including completed pieces, artist biographies, creative
-                    processes, and community involvement. By combining storytelling with visual inspiration, the
-                    website serves as both an educational resource and a digital gallery, allowing users to
-                    appreciate not just what artists produce but also how they do it.
-                <header class="mt-5">
+    <footer class="py-4 text-center">
+        <div class="container">Honey Mae Garo Portfolio</div>
+    </footer>
 
-
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="cardswrapper">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="img/BrainstormingWM1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="cardswrapper">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="img/MoodboardWM.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="cardswrapper">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="img/Round1DesignWM.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                    <figure class="text-end"></figure>
-                    <div class="col">
-                        <div class="text-start">
-                            <img src="img/BrainstormingWM1.png" class="rounded" alt="Brainstorming" width="500"
-                                height="400">
-                        </div>
-                    </div>
-                    <figure class="text-end">
-                        <h3> Brainstorming</h3>
-                        <p style="font-family: 'Garet';">This shows the beginning phases of Behind The Pen's
-                            brainstorming process, when concepts, themes, colors, and key elements are collected and
-                            organized. It demonstrates how the project got started, with inspiration, research, and an
-                            expanding list of objectives that influenced the final website design.</p>
-                    </figure>
-
-                    <img src="img/SitemapWM1.png" class="rounded" alt="Sitemap" width="600" height="200">
-
-                    <header class="mt-5">
-                        <figure class="text-start">
-                            <h3> Sitemap</h3>
-                            <p style="font-family: 'Garet';">This stage demonstrates how I created my Behind The Pen
-                                sitemap, which displays all of the primary pages and subpages to show how visitors
-                                navigate the website. I made sure that every page connected organically and supported a
-                                clear, user-friendly structure by specifying the Home, About, Gallery, Events, Blogs,
-                                Community, Contact, and Shop/Donate sections.</p>
-                        </figure>
-
-                        <img src="img/WireframeWM.png" class="rounded" alt="Wireframe" width="300" height="400">
-
-                        <header class="mt-5">
-                            <figure class="text-end">
-                                <h3> Wireframe</h3>
-                                <p style="font-family: 'Garet';">This step illustrates the wireframe phase of my website
-                                    design, during which I prepared each page's fundamental structure and layout before
-                                    incorporating colors, graphics, or other complex components. In order to make sure
-                                    the website feels balanced, well-organized, and simple for users to navigate, the
-                                    wireframe assists in laying out the locations of the navigation, graphics, text, and
-                                    content sections.</p>
-                            </figure>
-
-                            <img src="img/MoodboardWM.png" class="rounded" alt="Moodboard" width="500" height="300>
-
-                                <header class=" mt-5">
-                            <figure class="text-start">
-                                <h3> Moodboard</h3>
-                                <p style="font-family: 'Garet';">I experimented with various hero section designs in
-                                    this step to see how Behind The Pen's homepage might present the website.
-                                    Typography, layout, and personality are the main themes of each hero concept.
-                                    They might be bold and daring, traditional and elegant, or basic and
-                                    minimalistic. By making several sections, I was able to evaluate aesthetics and
-                                    determine which path best complemented my entire website theme.</p>
-                            </figure>
-
-                            <img src="img/IterationsWM.png" class="rounded" alt="Iterations" width="300" height="400">
-
-                            <header class="mt-5">
-                                <figure class="text-end">
-                                    <h3> Iterations</h3>
-                                    <p style="font-family: 'Garet';">In order to experiment with how Behind The Pen
-                                        might appear and work, I drew out many potential homepage and gallery
-                                        layouts. I was able to arrange the logo, navigation bar, photographs, search
-                                        tools, and category sections like media, era, and artist with the aid of
-                                        these basic sketches. Before using wireframes and digital mockups, sketches
-                                        made it simpler to visualize concepts.</p>
-                                </figure>
-
-                                <img src="img/Round1DesignWM.png" class="rounded" alt="Round 1 Designs" width="200"
-                                    height="500">
-
-                                <header class="mt-5">
-                                    <figure class="text-start">
-                                        <h3> Round 1 Designs</h3>
-                                        <p style="font-family: 'Garet';">A deep red color scheme was experimented
-                                            with in the first mockup, which gave the website a striking and dramatic
-                                            tone. In order to generate a gallery-like, cinematic vibe, this version
-                                            experimented with great contrast, black backgrounds, and emphasized
-                                            navigation elements. It clarified for me how mood and readability are
-                                            impacted by color intensity.</p>
-                                    </figure>
-
-                                    <img src="img/Round2DesignWM.png" class="rounded" alt="Round 2 Designs" width="220"
-                                        height="500">
-
-                                    <header class="mt-5">
-                                        <figure class="text-end">
-                                            <h3> Round 2 Designs</h3>
-                                            <p style="font-family: 'Garet';">The second design changed to a serene,
-                                                earthy green color scheme that was influenced by art museums and the
-                                                natural world. New and enhanced readability, along with a cleaner
-                                                structure and gentler tones, characterized this version. It produced
-                                                a calmer, friendlier atmosphere that is highly compatible with the
-                                                concept of a carefully designed artistic setting.</p>
-                                        </figure>
-
-                                        <img src="img/Round3DesignWM.png" class="rounded" alt="Round 3 Designs"
-                                            width="200" height="500">
-
-                                        <header class="mt-5">
-                                            <figure class="text-start">
-                                                <h3> Round 3 Designs</h3>
-                                                <p style="font-family: 'Garet';">The third design utilized a warm
-                                                    brown color scheme to create depth and an organic, gallery-like
-                                                    vibe. This color scheme effectively draws attention to the
-                                                    artwork while giving the website a traditional, grounded
-                                                    appearance. It also served as a method to evaluate warmth and
-                                                    delicate contrast within a professional layout.</p>
-                                            </figure>
-                                            <section>
-
-
-
-                                                <header class="m-4">
-                                                    <h1> Results </h1>
-                                                </header>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

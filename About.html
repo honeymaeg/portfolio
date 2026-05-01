@@ -2,99 +2,75 @@
 <html lang="en">
 
 <head>
-    <!-- REQUIRED: Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- REQUIRED: Page Title -->
-    <title>Honey Mae Garo</title>
-
-    <!-- REQUIRED: Bootstrap CSS -->
+    <title>About | Honey Mae Garo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"></script>
-
-
-    <!-- REQUIRED: Your Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
-
-
-    <!-- REQUIRED: Google Font API -->
-    <link href="https://fonts.googleapis.com/css2?family=against:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'against', regular;
-        }
-    </style>
 </head>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <img src="img/Logo.png" alt="Logo" class="d-inline-block align-text-top img-fluid"
-            style="max-width: 50px; height: auto;">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" href="index.html">Home</a>
-                <a class="nav-link" href="About.html">About</a>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Projects
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="WebsiteMockup.html">Project 1</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="TypographyPoster.html">Project 2</a></li>
-                    </ul>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="img/Logo.png" alt="Honey Mae Garo logo" width="50" height="50">
+                Honey Mae Garo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="About.html">About</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="WebsiteMockup.html">Website Mockup</a></li>
+                            <li><a class="dropdown-item" href="TypographyPoster.html">Typography Poster</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<section>
-    <header class="p-5"></header>
-    <figure class="text-start px-5">
-        <h1 class="display-1">About Me</h1>
-
-        <header class="m-5"></header>
-        <div class="row">
-            <div class="col">
-                <img src="img/AboutMe.jpg" class="rounded" alt="Wireframe" width="710" height="800">
-                <h2 style="font-family:'against';">Honey Mae Garo</h2>
+    <main class="py-5">
+        <section class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-4 text-center">
+                    <img src="img/Logo.png" class="about-logo" alt="Honey Mae Garo logo">
+                    <h1 class="display-4 mt-3">About Me</h1>
+                </div>
+                <div class="col-md-8">
+                    <h2>Honey Mae Garo</h2>
+                    <p>
+                        Welcome to my portfolio! I'm a second-year college student majoring in Creative Media with a
+                        concentration in Design and Media at the University of Hawai'i at West O'ahu.
+                    </p>
+                    <p>
+                        I enjoy creating visually appealing work and using design to bring ideas to life. After college,
+                        I plan to work in the design field as a graphic designer, creating digital experiences and
+                        physical products that connect with people.
+                    </p>
+                    <a class="btn btn-primary" href="mailto:honeymaegaro@gmail.com">Contact Me</a>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="col">
-                <figure class="text-end">
-                    <p style="font-family:'Garet';">Welcome to my portfolio! I'm a passionate designer and developer
-                        with a love
-                        for creating engaging digital experiences. With a background in both design and development, I
-                        strive to
-                        bridge the gap between aesthetics and functionality.... My name is Honey Mae Garo. I'm currently
-                        a second year college student majoring in Creative Media concentration in Design and Media at
-                        University of Hawai'i at West O'ahu. After college, I plan to work in the design field as a
-                        Graphic Designer. I enjoy designing and creating visually appealing content. I have experience
-                        with designing physical products as well.</p>
-                        <button class="btn btn-primary">Contact Me</button>
-                </figure>
-            </div>
-    </figure>
-</section>
+    <footer class="py-4 text-center">
+        <div class="container">Honey Mae Garo Portfolio</div>
+    </footer>
 
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
