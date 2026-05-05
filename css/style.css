@@ -14,8 +14,15 @@
 body {
     background: var(--bg);
     color: var(--text);
+    display: flex;
+    flex-direction: column;
     font-family: var(--font-body);
     line-height: 1.65;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 h1,
@@ -156,6 +163,12 @@ p {
     padding: 0 4.5rem;
 }
 
+.results-carousel {
+    margin: 2rem auto 0;
+    max-width: 980px;
+    padding: 0 4.5rem;
+}
+
 .carousel-card {
     align-items: center;
     display: grid;
@@ -174,14 +187,29 @@ p {
     padding: 2.25rem;
 }
 
+.results-card {
+    max-width: 820px;
+}
+
+.results-card .card-img-top {
+    height: 560px;
+    object-fit: contain;
+    padding: 1.25rem;
+    width: 100%;
+}
+
 .process-carousel .carousel-control-prev,
-.process-carousel .carousel-control-next {
+.process-carousel .carousel-control-next,
+.results-carousel .carousel-control-prev,
+.results-carousel .carousel-control-next {
     opacity: 1;
     width: 3rem;
 }
 
 .process-carousel .carousel-control-prev-icon,
-.process-carousel .carousel-control-next-icon {
+.process-carousel .carousel-control-next-icon,
+.results-carousel .carousel-control-prev-icon,
+.results-carousel .carousel-control-next-icon {
     background-color: var(--accent);
     background-size: 60%;
     border-radius: 999px;
@@ -215,14 +243,16 @@ p {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.site-footer {
+footer {
     background-color: var(--accent);
-    background-image:
-        linear-gradient(90deg, rgba(255, 255, 255, 0.14) 0 12%, transparent 12% 100%),
-        linear-gradient(90deg, transparent 0 50%, rgba(255, 179, 198, 0.35) 50% 100%);
-    background-size: 160px 100%, 260px 100%;
+}
+
+.site-footer {
+    background-color: var(--accent) !important;
+    background-image: none !important;
     color: #ffffff;
-    margin-top: 3rem;
+    font-family: var(--font-body);
+    margin-top: 0;
 }
 
 .footer-inner {
@@ -243,10 +273,12 @@ p {
 }
 
 .footer-brand img {
-    filter: brightness(0) invert(1);
-    height: 42px;
+    background: #ffffff;
+    border-radius: 8px;
+    height: 46px;
     object-fit: contain;
-    width: 72px;
+    padding: 0.35rem;
+    width: 86px;
 }
 
 .footer-links {
@@ -256,6 +288,7 @@ p {
 .footer-links a {
     border-left: 1px solid rgba(255, 255, 255, 0.7);
     color: #ffffff;
+    font-family: var(--font-body);
     font-size: 1.25rem;
     padding: 0.25rem 2rem;
     text-decoration: none;
@@ -288,12 +321,20 @@ p {
         padding: 0 3.25rem;
     }
 
+    .results-carousel {
+        padding: 0 3.25rem;
+    }
+
     .carousel-card {
         grid-template-columns: 1fr;
     }
 
     .carousel-card .card-img-top {
         height: 360px;
+    }
+
+    .results-card .card-img-top {
+        height: 420px;
     }
 
     .card-img-top {
